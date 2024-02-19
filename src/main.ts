@@ -39,7 +39,7 @@ Vue.directive('focus', {
 async function main() {
   // 初始 vuex 数据
   await SystemModule.getDicts()
-
+  
   new Vue({
     router,
     store,

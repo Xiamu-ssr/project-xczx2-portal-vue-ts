@@ -1,6 +1,8 @@
 module.exports = {
   publicPath: '/',
-  lintOnSave: process.env.NODE_ENV === 'development',
+  outputDir:'dist',
+  assetsDir:'static',
+  lintOnSave: process.env.NODE_ENV === 'development' ? 'warning' : false,
   devServer: {
     port: process.env.VUE_APP_CLIENT_MANAGE_PORT,
     open: false,

@@ -3,15 +3,17 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+// import { Component, Vue } from 'vue-property-decorator'
 
 // @Component({})
+import Vue from 'vue'
+
 export default {
   name: 'app',
     components: {
     },
     created: function () {
-      this.$router.push('/organization/course-list')
+      // this.$router.push('/organization/course-list')
     }
 }
 </script>

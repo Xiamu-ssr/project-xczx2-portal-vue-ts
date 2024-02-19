@@ -301,8 +301,8 @@ export default class extends mixins(MixinTools) {
       courseId: this.courseBaseId,
       parentid: 0,
       grade: 1,
-      pname: '新章名称 [点击修改]'
-      // mediaType: '',
+      pname: '新章名称 [点击修改]',
+      mediaType: '',
       // ctlEditTitle: false,
       // ctlBarShow: false
       // teachPlanTreeNodes: []
@@ -321,8 +321,8 @@ export default class extends mixins(MixinTools) {
       courseId: this.courseBaseId,
       parentid: parentid,
       grade: 2,
-      pname: '新小节名称 [点击修改]'
-      // mediaType: '',
+      pname: '新小节名称 [点击修改]',
+      mediaType: '',
       // isPreview: '0',
       // ctlEditTitle: false,
       // ctlBarShow: false
@@ -451,7 +451,7 @@ export default class extends mixins(MixinTools) {
       await this.showDeleteConfirm()
       await mediaUnAssociation(
         node.teachplanMedia.teachplanId,
-        node.teachplanMedia.mediaId,
+		node.teachplanMedia.mediaId,
         this.courseBaseId
       )
       this.getList()
